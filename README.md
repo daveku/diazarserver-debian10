@@ -19,7 +19,7 @@ The image [davidkudev/server-diazar](https://hub.docker.com/r/davidkudev/server-
 2. Clone this repository.
 
    ```bash
-    git clone https://github.com/daveku/install-docker-in-serverdiazar.git
+    git clone https://github.com/daveku/diazarserver-debian10.git
    ```
 
 3. Access the repository.
