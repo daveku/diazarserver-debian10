@@ -1,6 +1,6 @@
 # Install docker and deploy container on Diazar server with Debian 10
 
-The script will uninstall any previously installed docker, install docker and run a container named "serverdz".
+The script will uninstall any previously installed docker, install docker and run a container named "diazarserver".
 
 This container uses the latest image [davidkudev/server-diazar](https://hub.docker.com/r/davidkudev/server-diazar) and will be deployed to the port 3306. The container shares the directory `/var/lib/mysql` with the host at `~/backupDB`.
 
@@ -25,10 +25,10 @@ The image [davidkudev/server-diazar](https://hub.docker.com/r/davidkudev/server-
 3. Access the repository.
 
    ```bash
-    cd install-docker-in-serverdiazar
+    cd diazarserver-debian10
    ```
 
-4. Run the following command to install docker in serverdiazar.
+4. Run the following command to install docker in diazarserver.
 
    ```bash
    ./deploy_docker.sh
