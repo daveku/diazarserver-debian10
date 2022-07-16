@@ -2,9 +2,9 @@
 
 The script will uninstall any previously installed docker, install docker and run a container named "diazarserver".
 
-This container uses the latest image [davidkudev/server-diazar](https://hub.docker.com/r/davidkudev/server-diazar) and will be deployed to the port 3306. The container shares the directory `/var/lib/mysql` with the host at `~/backupDB`.
+This container uses the latest image [daveku/diazar-server](https://hub.docker.com/r/daveku/diazar-server) and will be deployed to the port 3306. The container shares the directory `/var/lib/mysql` with the host at `~/backupDB`.
 
-The image [davidkudev/server-diazar](https://hub.docker.com/r/davidkudev/server-diazar) has the following features:
+The image [davidkudev/server-diazar](https://hub.docker.com/r/daveku/diazar-server) has the following features:
 
 ## Features
 
