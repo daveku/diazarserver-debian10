@@ -29,9 +29,8 @@ echo ---> [6] Install docker
 sudo apt-get update && sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin -y
 
 echo ---> [7] Create container in docker
-sudo docker run -d --name diazarserver -p 3306:3306 -v ~/backupDB:/var/lib/mysql davidkudev/server-diazar
+sudo docker run -d --name diazarserver -p 3306:3306 -v ~/backupDB:/var/lib/mysql daveku/diazar-server
 
 echo ---> [8] Accessing the container
-sudo docker exec -it diazarserver bash
-
-echo Processes finished
+sudo docker exec -it diazarserver cd /usr/local/src/noip-2.1.9-1
+echo make install
