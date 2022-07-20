@@ -31,6 +31,4 @@ sudo apt-get update && sudo apt-get install docker-ce docker-ce-cli containerd.i
 echo ---> [7] Create container in docker
 sudo docker run -d --name diazarserver -p 3306:3306 -v /root/backupDB:/var/lib/mysql daveku/diazar-server
 
-echo ---> [8] Accessing the container
 echo Servidor Diazar corriendo
-sudo docker exec -it diazarserver sh
