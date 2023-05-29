@@ -24,14 +24,14 @@ echo \
   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian \
   $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
   
-echo ---> 6 Install docker
+echo 6 Install docker
 sudo apt-get update && sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin -y
 
-echo ---> 7 Create container in docker
-docker run -d --name diazarserver -p 3306:3306 -v /root/backupDB:/var/lib/mysql daveku/diazar-server
+echo 7 Create container in docker
+sudo docker run -d --name diazarserver -p 3306:3306 -v /root/backupDB:/var/lib/mysql daveku/diazar-server
 docker ps
 
 echo Servidor Diazar corriendo
 
-echo ---> 8 sin SUDO
+echo 8 sin SUDO
 sudo gpasswd -a $USER docker && newgrp docker
